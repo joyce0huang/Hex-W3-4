@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        <%- title %>
+    </title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body class="cursor-default">
+    <header class="bg-main text-white">
+        <div class="container relative mx-auto md:flex justify-between items-center">
+            <h1 class="py-4"><a
+                    class="header-h1 block w-20 h-12 bg-h1-logo bg-center bg-cover indent-[101%] whitespace-nowrap overflow-hidden transition-all duration-500 relative left-0"
+                    href="#">六角眼鏡</a></h1>
+            <!-- 漢堡條 -->
+            <a class="burger absolute right-5 top-[30px] md:hidden" href="#">
+                <span class="burger-line block w-[30px] h-1 bg-white mb-1 transition-all duration-500"></span>
+                <span class="burger-line block w-[30px] h-1 bg-white mb-1 transition-all duration-500"></span>
+                <span class="burger-line block w-[30px] h-1 bg-white transition-all duration-500"></span>
+            </a>
+            <!-- md: 出現的 -->
+            <nav class="hidden md:block text-lg -mr-3">
+                <ul class="flex text-center flex-nowrap space-x-10">
+                    <li><a class="p-3 hover:text-rose-200" href="#">系列鏡框</a></li>
+                    <li><a class="p-3 hover:text-rose-200" href="#">門市據點</a></li>
+                    <li><a class="p-3 hover:text-rose-200" href="#">門市據點</a></li>
+                    <li><a class="p-3 hover:text-rose-200" href="#">常見問題</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- 漢堡條控制的 -->
+        <nav class="header-nav max-h-0 overflow-hidden transition-all duration-500 md:hidden">
+            <ul class="flex flex-wrap text-center">
+                <li class="w-1/2 border"><a
+                        class="block p-3 transition-all duration-300 hover:bg-white hover:text-main hover:font-bold"
+                        href="#">系列鏡框</a></li>
+                <li class="w-1/2 border"><a
+                        class="block p-3 transition-all duration-300 hover:bg-white hover:text-main hover:font-bold"
+                        href="#">門市據點</a></li>
+                <li class="w-1/2 border"><a
+                        class="block p-3 transition-all duration-300 hover:bg-white hover:text-main hover:font-bold"
+                        href="#">門市據點</a></li>
+                <li class="w-1/2 border"><a
+                        class="block p-3 transition-all duration-300 hover:bg-white hover:text-main hover:font-bold"
+                        href="#">常見問題</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <%- contents %>
+
+        <footer class="bg-main text-white">
+            <div class="container py-6 mx-auto lg:pt-12 lg:pb-8">
+                <div class="flex justify-between mb-6 md:mb-9 lg:mb-8">
+                    <div>
+                        <ul class="hidden md:flex space-x-12 py-2 mb-8 lg:py-3 lg:mb-6">
+                            <li><a class="hover:text-rose-200" href="#">首頁</a></li>
+                            <li><a class="hover:text-rose-200" href="#">系列鏡框</a></li>
+                            <li><a class="hover:text-rose-200" href="#">門市據點</a></li>
+                            <li><a class="hover:text-rose-200" href="#">部落格</a></li>
+                            <li><a class="hover:text-rose-200" href="#">常見問題</a></li>
+                        </ul>
+                        <ul class="md:text-2xl">
+                            <li class="hover:text-rose-200 mb-2"><span
+                                    class="material-symbols-outlined align-top mr-2 md:text-[48px]">
+                                    call
+                                </span><a href="tel:+886-00000000">0800-000-000</a></li>
+                            <li class="hover:text-rose-200"><span
+                                    class="material-symbols-outlined align-top mr-2 md:text-[48px]">
+                                    mail
+                                </span><a href="mailto:glasses@business.com">glasses@business.com</a></li>
+                        </ul>
+                    </div>
+                    <span class="space-x-2 lg:space-x-8">
+                        <a href="#"><img class="inline-block w-6 md:w-10 lg:w-12 hover:scale-110"
+                                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic-social-fb.png?raw=true"
+                                alt="fb-logo"></a>
+                        <a href="#"><img class="inline-block w-6 md:w-10 lg:w-12 hover:scale-110"
+                                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic_social_ig.png?raw=true"
+                                alt="ig-logo"></a>
+                        <a href="#"><img class="inline-block w-6 md:w-10 lg:w-12 hover:scale-110"
+                                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic_social_line.png?raw=true"
+                                alt="line-logo"></a>
+                    </span>
+                </div>
+                <hr class="mb-4 md:mb-9 lg:mb-8">
+                <div class="md:flex md:justify-between md:items-center">
+                    <p class="mb-2">Copyright © 2020 Glasses.All rights reserved.</p>
+                    <span>
+                        <a class="block mb-2 md:text-sm md:inline-block md:mr-12 hover:text-rose-200" href="#">隱私權政策</a>
+                        <a class="md:text-sm hover:text-rose-200" href="#">服務條款</a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+        <script src="./assets/js/vendors.js"></script>
+        <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
