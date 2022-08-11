@@ -4,7 +4,6 @@
 // var headerNav = document.querySelector('.header-nav')
 // var headerH1 = document.querySelector('.header-h1')
 // burger.onclick = function () {
-//   headerNav.classList.toggle('max-h-0')
 //   headerNav.classList.toggle('max-h-24')
 //   headerH1.classList.toggle('left-0')
 //   headerH1.classList.toggle('left-1/2')
@@ -15,3 +14,7 @@
 //   burgerLine[2].classList.toggle('-translate-y-2')
 //   burgerLine[2].classList.toggle('-rotate-45')
 // }
+
+
+
+

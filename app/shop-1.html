@@ -1,0 +1,56 @@
+---
+title: 門市據點-1
+layout: ./app/layout.ejs
+engine: ejs
+current: shop-1
+---
+
+<main>
+    <section class="container">
+        <h2
+            class="text-xl font-bold border-l-8 border-main pl-2 -ml-1 mt-10 mb-6 md:mt-20 md:mb-8 md:text-3xl lg:mt-24">
+            門市據點</h2>
+        <label class="flex mb-6 md:mb-10" for="">
+            <span class="pt-1.5 mr-2 md:text-xl md:pt-0">選擇分店</span>
+            <div class="grow relative max-w-[304px]">
+                <div class="shop-chose border border-gray-place flex justify-between px-3 py-1.5">
+                    <span class="text-gray-text">台北中山旗艦店</span><span
+                        class="material-symbols-outlined">arrow_drop_down</span>
+                </div>
+                <ul class="shop-down w-full max-h-0 overflow-hidden transition-all duration-500">
+                    <li class="block border border-gray-place px-3 py-1.5 hover:bg-main-light active:text-main">台北市
+                    </li>
+                    <li class="block border border-gray-place px-3 py-1.5 hover:bg-main-light active:text-main">台中市
+                    </li>
+                    <li class="block border border-gray-place px-3 py-1.5 hover:bg-main-light active:text-main">高雄市
+                    </li>
+                </ul>
+            </div>
+        </label>
+        <div class="lg:flex">
+            <div class="text-black-light mb-6 md:w-full md:flex lg:inline-block lg:w-5/12 lg:pr-3">
+                <img class="block object-cover md:w-1/2 md:pr-3 md:max-h-[224px] lg:pr-0 lg:w-full"
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-1.png?raw=true"
+                    alt="台北中山旗艦店 店家照">
+                <div class="md:w-1/2 md:pl-3 lg:pl-0 lg:w-full">
+                    <h3 class="text-xl outline outline-1 outline-gray-shop px-6 py-2 hover:text-main">台北中山旗艦店</h3>
+                    <ul class="text-lg outline outline-1 outline-gray-shop px-6 py-4">
+                        <li class="mb-2"><span class="material-symbols-outlined align-top mr-2">
+                                call
+                            </span>電話：<a href="tel:+886-2-0001234">(02)000-1234</a></li>
+                        <li class="mb-2"><span class="material-symbols-outlined align-top mr-2">
+                                schedule
+                            </span>營業時間：10:00-21:00</li>
+                        <li class="flex"><span class="material-symbols-outlined align-top mr-2">
+                                location_on
+                            </span><span>地址：台北市中山區南京東路25巷2-1號</span></li>
+                    </ul>
+                </div>
+            </div>
+            <iframe class="w-full h-[208px] mb-16 md:h-[414px] md:mb-20 lg:w-7/12 lg:lg:pl-3"
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3614.4341381892937!2d121.52031505793722!3d25.053270584501345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5Y-w5YyX5biC5Lit5bGx5Y2A5Y2X5Lqs5p2x6LevMjXlt7cyLTHomZ8!5e0!3m2!1szh-TW!2stw!4v1659880411710!5m2!1szh-TW!2stw"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+</main>
