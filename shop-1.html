@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- # -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        門市據點-1
+    </title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body class="cursor-default">
+    <header class="bg-main text-white">
+        <div class="container relative mx-auto md:flex justify-between items-center">
+            <h1 class="py-4"><a
+                    class="header-h1 block w-20 h-12 bg-h1-logo bg-center bg-cover indent-[101%] whitespace-nowrap overflow-hidden transition-all duration-500 relative left-0"
+                    href="./index.html">六角眼鏡</a></h1>
+            <!-- 漢堡條 -->
+            <a class="burger absolute right-5 top-[30px] md:hidden" href="#">
+                <span class="burger-line block w-[30px] h-1 bg-white mb-1 transition-all duration-500"></span>
+                <span class="burger-line block w-[30px] h-1 bg-white mb-1 transition-all duration-500"></span>
+                <span class="burger-line block w-[30px] h-1 bg-white transition-all duration-500"></span>
+            </a>
+            <!-- md: 出現的 -->
+            <nav class="hidden md:block text-lg -mr-3">
+                <ul class="flex text-center flex-nowrap space-x-10">
+                    <li><a class="p-3 hover:text-rose-200" href="./product-optical.html">系列鏡框</a></li>
+                    <li><a class="p-3 hover:text-rose-200" href="./shop-list.html">門市據點</a></li>
+                    <li><a class="p-3 hover:text-rose-200" href="./blog-list.html">部落格</a></li>
+                    <li><a class="p-3 hover:text-rose-200" href="./fqa.html">常見問題</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- 漢堡條控制的 -->
+        <nav class="header-nav max-h-0 overflow-hidden transition-all duration-500 md:hidden">
+            <ul class="flex flex-wrap text-center">
+                <li class="w-1/2 border"><a
+                        class="block p-3 transition-all duration-300 hover:bg-white hover:text-main hover:font-bold"
+                        href="./product-optical.html">系列鏡框</a></li>
+                <li class="w-1/2 border"><a
+                        class="block p-3 transition-all duration-300 hover:bg-white hover:text-main hover:font-bold"
+                        href="./shop-list.html">門市據點</a></li>
+                <li class="w-1/2 border"><a
+                        class="block p-3 transition-all duration-300 hover:bg-white hover:text-main hover:font-bold"
+                        href="./blog-list.html">部落格</a></li>
+                <li class="w-1/2 border"><a
+                        class="block p-3 transition-all duration-300 hover:bg-white hover:text-main hover:font-bold"
+                        href="./fqa.html">常見問題</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+<main>
+    <section class="container">
+        <h2
+            class="text-xl font-bold border-l-8 border-main pl-2 -ml-1 mt-10 mb-6 md:mt-20 md:mb-8 md:text-3xl lg:mt-24">
+            門市據點</h2>
+        <label class="flex mb-6 md:mb-10" for="">
+            <span class="pt-1.5 mr-2 md:text-xl md:pt-0">選擇分店</span>
+            <div class="grow relative max-w-[304px]">
+                <div class="shop-chose border border-gray-place flex justify-between px-3 py-1.5">
+                    <span class="text-gray-text">台北中山旗艦店</span><span
+                        class="material-symbols-outlined">arrow_drop_down</span>
+                </div>
+                <ul class="shop-down w-full max-h-0 overflow-hidden transition-all duration-500">
+                    <li class="block border border-gray-place px-3 py-1.5 hover:bg-main-light active:text-main">台北市
+                    </li>
+                    <li class="block border border-gray-place px-3 py-1.5 hover:bg-main-light active:text-main">台中市
+                    </li>
+                    <li class="block border border-gray-place px-3 py-1.5 hover:bg-main-light active:text-main">高雄市
+                    </li>
+                </ul>
+            </div>
+        </label>
+        <div class="lg:flex">
+            <div class="text-black-light mb-6 md:w-full md:flex lg:inline-block lg:w-5/12 lg:pr-3">
+                <img class="block object-cover md:w-1/2 md:pr-3 md:max-h-[224px] lg:pr-0 lg:w-full"
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-1.png?raw=true"
+                    alt="台北中山旗艦店 店家照">
+                <div class="md:w-1/2 md:pl-3 lg:pl-0 lg:w-full">
+                    <h3 class="text-xl outline outline-1 outline-gray-shop px-6 py-2 hover:text-main">台北中山旗艦店</h3>
+                    <ul class="text-lg outline outline-1 outline-gray-shop px-6 py-4">
+                        <li class="mb-2"><span class="material-symbols-outlined align-top mr-2">
+                                call
+                            </span>電話：<a href="tel:+886-2-0001234">(02)000-1234</a></li>
+                        <li class="mb-2"><span class="material-symbols-outlined align-top mr-2">
+                                schedule
+                            </span>營業時間：10:00-21:00</li>
+                        <li class="flex"><span class="material-symbols-outlined align-top mr-2">
+                                location_on
+                            </span><span>地址：台北市中山區南京東路25巷2-1號</span></li>
+                    </ul>
+                </div>
+            </div>
+            <iframe class="w-full h-[208px] mb-16 md:h-[414px] md:mb-20 lg:w-7/12 lg:lg:pl-3"
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3614.4341381892937!2d121.52031505793722!3d25.053270584501345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5Y-w5YyX5biC5Lit5bGx5Y2A5Y2X5Lqs5p2x6LevMjXlt7cyLTHomZ8!5e0!3m2!1szh-TW!2stw!4v1659880411710!5m2!1szh-TW!2stw"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+</main>
+
+        <footer class="bg-main text-white">
+            <div class="container py-6 mx-auto lg:pt-12 lg:pb-8">
+                <div class="flex justify-between mb-6 md:mb-9 lg:mb-8">
+                    <div>
+                        <ul class="hidden md:flex space-x-12 py-2 mb-8 lg:py-3 lg:mb-6">
+                            <li><a class="hover:text-rose-200" href="./index.html">首頁</a></li>
+                            <li><a class="hover:text-rose-200" href="./product-optical.html">系列鏡框</a></li>
+                            <li><a class="hover:text-rose-200" href="./shop-list.html">門市據點</a></li>
+                            <li><a class="hover:text-rose-200" href="./blog-list.html">部落格</a></li>
+                            <li><a class="hover:text-rose-200" href="./fqa.html">常見問題</a></li>
+                        </ul>
+                        <ul class="md:text-2xl">
+                            <li class="hover:text-rose-200 mb-2"><span
+                                    class="material-symbols-outlined align-top mr-2 md:text-[48px]">
+                                    call
+                                </span><a href="tel:+886-00000000">0800-000-000</a></li>
+                            <li class="hover:text-rose-200"><span
+                                    class="material-symbols-outlined align-top mr-2 md:text-[48px]">
+                                    mail
+                                </span><a href="mailto:glasses@business.com">glasses@business.com</a></li>
+                        </ul>
+                    </div>
+                    <span class="space-x-2 lg:space-x-8">
+                        <a href="#"><img class="inline-block w-6 md:w-10 lg:w-12 hover:scale-110"
+                                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic-social-fb.png?raw=true"
+                                alt="fb-logo"></a>
+                        <a href="#"><img class="inline-block w-6 md:w-10 lg:w-12 hover:scale-110"
+                                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic_social_ig.png?raw=true"
+                                alt="ig-logo"></a>
+                        <a href="#"><img class="inline-block w-6 md:w-10 lg:w-12 hover:scale-110"
+                                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic_social_line.png?raw=true"
+                                alt="line-logo"></a>
+                    </span>
+                </div>
+                <hr class="mb-4 md:mb-9 lg:mb-8">
+                <div class="md:flex md:justify-between md:items-center">
+                    <p class="mb-2">Copyright © 2020 Glasses.All rights reserved.</p>
+                    <span>
+                        <a class="block mb-2 md:text-sm md:inline-block md:mr-12 hover:text-rose-200" href="#">隱私權政策</a>
+                        <a class="md:text-sm hover:text-rose-200" href="#">服務條款</a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+        <script src="./assets/js/vendors.js"></script>
+        <script src="./assets/js/all.js"></script>
+        <!-- 漢堡條動畫 -->
+        <script>
+            var burger = document.querySelector('.burger')
+            var burgerLine = document.querySelectorAll('.burger-line')
+            var headerNav = document.querySelector('.header-nav')
+            var headerH1 = document.querySelector('.header-h1')
+            burger.onclick = function () {
+                headerNav.classList.toggle('max-h-24')
+                headerH1.classList.toggle('left-0')
+                headerH1.classList.toggle('left-1/2')
+                headerH1.classList.toggle('-translate-x-1/2')
+                burgerLine[0].classList.toggle('translate-y-2')
+                burgerLine[0].classList.toggle('rotate-45')
+                burgerLine[1].classList.toggle('rotate-45')
+                burgerLine[2].classList.toggle('-translate-y-2')
+                burgerLine[2].classList.toggle('-rotate-45')
+            }
+        </script>
+</body>
+
+</html>

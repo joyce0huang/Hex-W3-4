@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- # -->
 
 <head>
     <meta charset="UTF-8">
@@ -18,7 +19,7 @@
         <div class="container relative mx-auto md:flex justify-between items-center">
             <h1 class="py-4"><a
                     class="header-h1 block w-20 h-12 bg-h1-logo bg-center bg-cover indent-[101%] whitespace-nowrap overflow-hidden transition-all duration-500 relative left-0"
-                    href="#">六角眼鏡</a></h1>
+                    href="./index.html">六角眼鏡</a></h1>
             <!-- 漢堡條 -->
             <a class="burger absolute right-5 top-[30px] md:hidden" href="#">
                 <span class="burger-line block w-[30px] h-1 bg-white mb-1 transition-all duration-500"></span>
@@ -28,10 +29,10 @@
             <!-- md: 出現的 -->
             <nav class="hidden md:block text-lg -mr-3">
                 <ul class="flex text-center flex-nowrap space-x-10">
-                    <li><a class="p-3 hover:text-rose-200" href="#">系列鏡框</a></li>
-                    <li><a class="p-3 hover:text-rose-200" href="#">門市據點</a></li>
-                    <li><a class="p-3 hover:text-rose-200" href="#">門市據點</a></li>
-                    <li><a class="p-3 hover:text-rose-200" href="#">常見問題</a></li>
+                    <li><a class="p-3 hover:text-rose-200" href="./product-optical.html">系列鏡框</a></li>
+                    <li><a class="p-3 hover:text-rose-200" href="./shop-list.html">門市據點</a></li>
+                    <li><a class="p-3 hover:text-rose-200" href="./blog-list.html">部落格</a></li>
+                    <li><a class="p-3 hover:text-rose-200" href="./fqa.html">常見問題</a></li>
                 </ul>
             </nav>
         </div>
@@ -40,16 +41,16 @@
             <ul class="flex flex-wrap text-center">
                 <li class="w-1/2 border"><a
                         class="block p-3 transition-all duration-300 hover:bg-white hover:text-main hover:font-bold"
-                        href="#">系列鏡框</a></li>
+                        href="./product-optical.html">系列鏡框</a></li>
                 <li class="w-1/2 border"><a
                         class="block p-3 transition-all duration-300 hover:bg-white hover:text-main hover:font-bold"
-                        href="#">門市據點</a></li>
+                        href="./shop-list.html">門市據點</a></li>
                 <li class="w-1/2 border"><a
                         class="block p-3 transition-all duration-300 hover:bg-white hover:text-main hover:font-bold"
-                        href="#">門市據點</a></li>
+                        href="./blog-list.html">部落格</a></li>
                 <li class="w-1/2 border"><a
                         class="block p-3 transition-all duration-300 hover:bg-white hover:text-main hover:font-bold"
-                        href="#">常見問題</a></li>
+                        href="./fqa.html">常見問題</a></li>
             </ul>
         </nav>
     </header>
@@ -176,30 +177,39 @@
     <section class="bg-main-light py-10 md:py-20">
         <div class="container">
             <h2 class="text-xl font-bold mb-6 md:text-3xl md:mb-12">聯絡我們</h2>
-            <p class="text-black text-justify mb-6 mx-auto md:w-10/12 lg:w-1/2">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+            <p class="text-black text-justify mb-6 mx-auto md:w-10/12 lg:w-1/2">
+                我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
             <form class="text-black text-left md:w-10/12 lg:w-1/2 mx-auto" action="">
                 <label class="block mb-2" for="name">姓名</label>
-                <input class="w-full border bg-transparent px-3 py-1.5 mb-4 focus:outline-none focus:border-transparent focus:ring-main focus:ring-1 focus:bg-white" type="text" name="name" id="name" placeholder="陳小明">
+                <input
+                    class="w-full border bg-transparent px-3 py-1.5 mb-4 focus:outline-none focus:border-transparent focus:ring-main focus:ring-1 focus:bg-white"
+                    type="text" name="name" id="name" placeholder="陳小明">
                 <br>
                 <label class="block mb-2" for="tel">聯絡電話</label>
-                <input class="w-full border bg-transparent px-3 py-1.5 mb-4 focus:outline-none focus:border-transparent focus:ring-main focus:ring-1 focus:bg-white" type="tel" name="tel" id="tel"
-                    placeholder="0912-345-678">
+                <input
+                    class="w-full border bg-transparent px-3 py-1.5 mb-4 focus:outline-none focus:border-transparent focus:ring-main focus:ring-1 focus:bg-white"
+                    type="tel" name="tel" id="tel" placeholder="0912-345-678">
                 <br>
                 <label class="block mb-2" for="email">電子郵件</label>
-                <input class="w-full border bg-transparent px-3 py-1.5 mb-4 focus:outline-none focus:border-transparent focus:ring-main focus:ring-1 focus:bg-white" type="email" name="email" id="email"
-                    placeholder="example@email.com">
+                <input
+                    class="w-full border bg-transparent px-3 py-1.5 mb-4 focus:outline-none focus:border-transparent focus:ring-main focus:ring-1 focus:bg-white"
+                    type="email" name="email" id="email" placeholder="example@email.com">
                 <br>
                 <label class="block mb-2" for="opinion">意見反應</label>
-                <textarea class="w-full h-[136px] border bg-transparent px-3 py-1.5 mb-4 resize-none focus:outline-none focus:border-transparent focus:ring-main focus:ring-1 focus:bg-white" name="opinion" id="opinion" placeholder="請輸入您的意見"></textarea>
+                <textarea
+                    class="w-full h-[136px] border bg-transparent px-3 py-1.5 mb-4 resize-none focus:outline-none focus:border-transparent focus:ring-main focus:ring-1 focus:bg-white"
+                    name="opinion" id="opinion" placeholder="請輸入您的意見"></textarea>
                 <br>
                 <div class="flex items-center mb-6 md:mb-12">
-                    <input class="w-4 h-4 mr-1 focus:ring-1 focus:ring-main text-main" type="checkbox" name="cbox" id="cbox">
+                    <input class="w-4 h-4 mr-1 focus:ring-1 focus:ring-main text-main" type="checkbox" name="cbox"
+                        id="cbox">
                     <label for="cbox">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
                 </div>
-                <input class="w-full bg-main text-white font-bold cursor-pointer p-4 hover:bg-main-dark md:w-3/5 block mx-auto lg:w-2/3" type="submit" value="確認送出" name="submit">
+                <input
+                    class="w-full bg-main text-white font-bold cursor-pointer p-4 hover:bg-main-dark md:w-3/5 block mx-auto lg:w-2/3"
+                    type="submit" value="確認送出" name="submit">
             </form>
         </div>
-    </section>
 </main>
 
         <footer class="bg-main text-white">
@@ -207,11 +217,11 @@
                 <div class="flex justify-between mb-6 md:mb-9 lg:mb-8">
                     <div>
                         <ul class="hidden md:flex space-x-12 py-2 mb-8 lg:py-3 lg:mb-6">
-                            <li><a class="hover:text-rose-200" href="#">首頁</a></li>
-                            <li><a class="hover:text-rose-200" href="#">系列鏡框</a></li>
-                            <li><a class="hover:text-rose-200" href="#">門市據點</a></li>
-                            <li><a class="hover:text-rose-200" href="#">部落格</a></li>
-                            <li><a class="hover:text-rose-200" href="#">常見問題</a></li>
+                            <li><a class="hover:text-rose-200" href="./index.html">首頁</a></li>
+                            <li><a class="hover:text-rose-200" href="./product-optical.html">系列鏡框</a></li>
+                            <li><a class="hover:text-rose-200" href="./shop-list.html">門市據點</a></li>
+                            <li><a class="hover:text-rose-200" href="./blog-list.html">部落格</a></li>
+                            <li><a class="hover:text-rose-200" href="./fqa.html">常見問題</a></li>
                         </ul>
                         <ul class="md:text-2xl">
                             <li class="hover:text-rose-200 mb-2"><span
@@ -255,7 +265,6 @@
             var headerNav = document.querySelector('.header-nav')
             var headerH1 = document.querySelector('.header-h1')
             burger.onclick = function () {
-                headerNav.classList.toggle('max-h-0')
                 headerNav.classList.toggle('max-h-24')
                 headerH1.classList.toggle('left-0')
                 headerH1.classList.toggle('left-1/2')
