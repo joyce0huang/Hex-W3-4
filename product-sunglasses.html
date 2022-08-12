@@ -85,7 +85,7 @@
     <h2 class="text-center text-xl font-medium md:text-42px">2020 NEW COLLECTION</h2>
     <h2 class="text-center text-xl mb-6 md:text-32px">賽璐珞鈦金屬混合鏡框</h2>
     <!-- js 根據視窗大小動態產生 -->
-    <ul class="product-list-sunglasses text-xl mb-16 md:flex md:flex-wrap md:-mx-3 md:mb-10"></ul>
+    <ul id="product-list-sunglasses" class="text-xl mb-16 md:flex md:flex-wrap md:-mx-3 md:mb-10"></ul>
     <!-- 頁碼 -->
     <ul class="text-gray-dark text-center flex justify-center">
         <li class="md:text-pageBtn"><a
@@ -107,36 +107,6 @@
     </ul>
 </section>
 </main>
-
-<script>
-    var productList = document.querySelector('.product-list-sunglasses')
-    start()
-    // 調整視窗大小會發生事件
-    window.onresize = start;
-    function start() {
-        productList.innerHTML = ``
-        if (window.innerWidth < 768) {
-            // 當視窗寬度小於768px時執行
-            showSunglass(5)
-        }
-        else {
-            // 當視窗寬度不小於768px時執行
-            showSunglass(6)
-        }
-        function showSunglass(num) {
-            for (let i = 7; i <= num + 6; i++) {
-                productList.innerHTML += `<li class="mb-6 md:w-1/2 md:px-3 md:mb-10 lg:w-1/3 lg:mb-20">
-                                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-${i}.png?raw=true"
-                                    alt="sunglasses-product-${i}">
-                                <h3>BJ41600S<p class="font-medium text-main float-right">NTD3,490</p>
-                                </h3>
-                                <span class="inline-block w-6 h-6 rounded bg-brown mr-2"></span><span
-                                    class="inline-block w-6 h-6 rounded bg-brown-light"></span>
-                            </li>`
-            }
-        }
-    }
-</script>
 
         <footer class="bg-main text-white">
             <div class="container py-6 mx-auto lg:pt-12 lg:pb-8">
